@@ -1,0 +1,278 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #f8f8f8;
+    color: #002929;
+    letter-spacing: -0.04rem;
+    line-height: 1.6;
+    padding: 2rem;
+    background-image: url('images/background-bs.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  /* Logos */
+  #primary-logo {
+    width: 12rem;
+    height: auto;
+    display: block;
+    padding-left: 4rem;
+    padding-top: 2rem;
+  }
+  @media (max-width: 768px) {
+    .logo {
+      margin: 0 auto 1.5rem;
+      text-align: center;
+    }
+}
+
+  /* Headings */
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 200;
+    letter-spacing: -0.06em;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 200;
+    letter-spacing: -0.06em;
+    margin: 2rem 0 1rem;
+    color: #444;
+  }
+  
+  /* Paragraphs */
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: 200;
+  }
+
+  span{
+    font-size: 1.5rem;
+  }
+  
+  /* Intro text */
+  .intro {
+    font-size: 1.125rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  /* FAQ Buttons */
+  .faq-buttons button {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #ececec;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .faq-buttons button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Chat Form */
+  .chat-area {
+    margin: 2rem 0;
+  }
+  
+  #chatForm {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  #userInput {
+    flex: 1;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    border-radius: 999px; /* Allows me to get the maximum rounding possible */
+
+    /* Gradient border */
+    border: 1px solid #0029298b;
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+
+    /* Background fill */
+    background-color: #ffffff58;
+
+    /* Blend mode for glass effect */
+    mix-blend-mode: hard-light;
+    backdrop-filter: blur(6px) saturate(120%) brightness(1.05);
+
+    /* Drop shadow */
+    box-shadow: 0 0 24px #00292931;
+
+    /* Input text options */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 200;
+    letter-spacing: -0.06rem;
+    color: #002929;
+  }
+  
+  #chatForm button {
+    padding: 0.75rem 1rem;
+    background-color: #002929;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .submit-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  #chatForm button:hover {
+    background-color: #168052;
+  }
+
+  /* Response Message */
+  .message {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 1rem;
+    max-width: 80%;
+  }
+  
+  .message.user {
+    background: #e0f7f4;
+    align-self: flex-end;
+    text-align: right;
+  }
+  
+  .message.bot {
+    background: #f3f3f3;
+    align-self: flex-start;
+    text-align: left;
+  }
+  
+  
+  /* FAQ Section */
+  .faq-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%
+  }
+
+  .faq-text{
+    flex: 1;
+    font-size: 1.125rem;
+    margin-right: 1rem;
+  }
+
+  .faq-underline{
+    height: 0.025rem;
+    width: 100%;
+    background-color: #002929;
+    mix-blend-mode: color-burn;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .faq-icon{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    background: none;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .help-section {
+    padding: 2rem 0;
+  }
+  
+  .help-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  .help-text {
+    flex: 1 1 300px;
+    max-width: 400px;
+  }
+  
+  .help-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .help-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .help-points {
+    flex: 1 1 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2rem;
+    align-self: stretch;
+  }
+  
+  .point {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .point img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  
+  /* Footer */
+  footer {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+  #footer-text{
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+  }
+  
+  footer a {
+    color: #444;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: green
+  }
+  

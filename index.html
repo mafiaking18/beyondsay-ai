@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BeyondSay | AI Assistant by Beyond Co.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <img src="images/beyond-say-logo.png" alt="BeyondSay Logo" id="primary-logo">
+  <main class="container">
+    <h1>Let's Talk.</h1>
+
+    <p class="intro">
+      BeyondSay is your always-on assistant, powered by AI and designed to help you get answers fast. 
+      From submitting assets to checking in on timelines, just ask away and BeyondSay will do the rest.
+    </p>
+
+    <section class="chat-area">
+      <div id="chatDisplay"></div>
+        <form id="chatForm">
+          <input type="text" id="userInput" placeholder="Type your query here..." autocomplete="off" />
+          <button type="submit"><img src="/images/up-arrow-icon.svg" alt="Send" class="submit-icon" /></button>
+        </form>
+      </section>
+
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-underline"></div>
+        <div class="faq-row">
+          <p class="faq-text">How do I email you my payment details?</p>
+          <button class="faq-icon" aria-label="Expand" data-question="How do I email you my payment details?">
+            <img src="images/arrow-circle-right.svg" alt="Expand" class="arrow-icon" />
+          </button>
+        </div>
+        <div class="faq-underline"></div>
+      
+        <div class="faq-row">
+          <p class="faq-text">What is included in the BeyondNova package?</p>
+          <button class="faq-icon" aria-label="Expand" data-question="What is included in the BeyondNova package?">
+            <img src="images/arrow-circle-right.svg" alt="Expand" class="arrow-icon" />
+          </button>
+        </div>
+        <div class="faq-underline"></div>
+
+        <div class="faq-row">
+          <p class="faq-text">Can I cancel my BeyondPay contract?</p>
+          <button class="faq-icon" aria-label="Expand" data-question="Can I cancel my BeyondPay contract">
+            <img src="images/arrow-circle-right.svg" alt="Expand" class="arrow-icon" />
+          </button>
+        </div>
+        <div class="faq-underline"></div>
+      </section>
+      
+
+    
+
+      <section class="help-section">
+        <div class="help-content">
+          <!-- Left Column -->
+          <div class="help-text">
+            <h2>How BeyondSay Can Help</h2>
+            <p>
+              Whether you're new to working with us or a returning client, BeyondSay is here to make things easier.
+              It can guide you through submitting your files, explain the services we offer, and let you know what to
+              expect when it comes to timelines and next steps. If you're not sure who to contact or need quick 
+              answers outside our usual working hours, BeyondSay has you covered — just type your question and 
+              get an instant response.
+            </p>
+          </div>
+      
+          <!-- Right Column -->
+          <div class="help-points">
+            <div class="point">
+              <img src="images/say-y.svg" alt="Icon" />
+              <span>Submit or check file requirements</span>
+            </div>
+            <div class="point">
+              <img src="images/say-y.svg" alt="Icon" />
+              <span>Find the right contact</span>
+            </div>
+            <div class="point">
+              <img src="images/say-y.svg" alt="Icon" />
+              <span>Get turnaround time estimates</span>
+            </div>
+            <div class="point">
+              <img src="images/say-y.svg" alt="Icon" />
+              <span>Learn about services we offer</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <section class="what-section">
+      <h2>What is BeyondSay?</h2>
+      <p>
+        BeyondSay is an AI-powered chatbot created by Beyond Co. to support our clients with quick, helpful 
+        answers — anytime, day or night. It’s built using OpenAI’s ChatGPT technology, which means it can 
+        understand and respond to questions in a natural, human-like way.
+      </p>
+      <p>
+        We’ve trained BeyondSay to reflect our tone of voice and focus on the things clients ask us most — 
+        from file submissions and timelines to service details and project support. It’s like having one of our 
+        team members ready to chat, even when we’re offline.
+      </p>
+      <p>
+        While it can’t replace real conversations for more complex issues, BeyondSay is a great first step to 
+        getting the info you need, fast.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footer-text">© 2025 Beyond Co. Ltd • All rights reserved • <a href="https://beyond-co.com">Visit our main site</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
